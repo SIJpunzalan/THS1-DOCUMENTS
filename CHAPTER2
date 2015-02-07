@@ -1,0 +1,114 @@
+Chapter 2
+Review of Related Literatures and Studies
+
+A.	Natural Language Processing 
+
+According to Collobert, R., and Weston J. (2008), Natural Language Processing aims to convert human language into a formal representation that is easy for computers to manipulate. Current end applications include information extraction, machine translation, summarization, search and human computer interfaces. Naturals language is also defined by Liddy, E. (1998), is a set of computational techniques for analyzing and representing naturally occurring texts at one or more levels of linguistic analysis for the purpose of achieving human-like language processing for a range of tasks or applications. This Field is the major element of the study such that the inputs coming from the user will be in a form of human language where computers and machines will only understand with the help of complex computations provided by Natural Language processing.
+
+Language processing as discussed by Liddy, E.(1998) consists of levels that human understand or extract meaning, with these levels, a deeper understanding on how humans retrieves meaning at every level of language, the figure below shows the different levels in Language Processing.
+Figure
+
+
+
+
+
+
+Each level is defined by Liddy, E. (1998).  The first level is the morphological level has to do with the smallest units of meaning in language, namely morpheme the smallest meaningful pieces of words. The second level is the lexical level which is concerned with linguistic processing at the word level and includes such processing as part-of-speech tagging. When humans hear or read a sentence, they determine whether a word that can function both as a verb and as a noun is either a verb or a noun in that particular sentence. The third level is the syntactic level where order and the arrangement of words within a sentence convey meaning. The fourth is the semantic level which dealt with understanding the meaning of words within context-i.e., humans are able to unambiguously understand words when they hear them or read them in a sentence even though many words have multiple meanings. The fifth level is the discourse level which is concerned with units of text larger than a sentence. The Last level is the pragmatic level which is concerned with the knowledge and meaning that we assign to text because of our world knowledge.
+
+A research named A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning conducted by Collobert, R., and Weston J. (2008), explained that natural language processing has six standard tasks, namely Part-of-Speech tagging, Chunking, Named Entity Recognition, Semantic Role Labeling, Language models and Semantically related words. The table below shows the definition of each task as discussed by Collobert, R., and Weston J. (2008),
+
+Table
+
+Part-of-Speech tagging	Aims at labeling each word with a unique tag that indicates its syntactic role.
+Chunking	also called shallow parsing, aims at labeling segments of a sentence with syntactic constituents such as noun or verb phrase
+Named Entity Recognition	labels atomic elements in the sentence into categories such as person, company, or location.
+Semantic Role Labeling	aims at giving a semantic role to a syntactic constituent of a sentence
+Language models	A language model traditionally estimates the probability of the next word being in a sequence.
+related words	This is the task of predicting whether two words are semantically related
+
+B.	Solving Mathematical word problems 
+Solving mathematical word problems is an important part in school education as stated in Liguda, C., and Pfeiffler, T. (2011). It involves mastery in logic and understanding situations in able to come up with the most fitted solution.
+
+ Mathematical word problems is evident not only in education but in everyday life and these are the most confusing and difficult problems encountered by students, it does not only require mathematical skills but also requires comprehension of the language and being able to fully understand the meaning of words.
+
+As technology evolves, Software that has the capacity to solve word problems has been developed but in order to engage in such development Liguda, C., and Pfeiffler, T. (2011). stated that it requires a deeper understanding of tasks that must be mastered by the system. These tasks are as follows: A Wide range of surface characteristics, A Flexible sentence structure, Irrelevant information, Different concepts, Multistep problems and Understanding the meaning of words. These said tasks will make systems solve word problems as efficient as possible allowing students to have a tool for studying and increasing their ability in solving mathematical word problems.
+C.	Concepts of Work
+Work is defined in many ways but in the field of physics, it is when a force is acted on the body, there is a displacement in the direction of force where it is applied. The term work is introduced by the French mathematician Gaspard-Gustave Coriolis, as a weight lifted through height. The basic formula for solving work is the amount of force applied multiplied to the displacement that the object had reached Work = Force x Displacement acquiring the SI unit of Newton/meter or also known as Joule(J).
+Work is now associated with word problems such that it is one of the difficult problems to understand because of several factors that can affect in solving the applied amount of work in an object, the factors such as the different units used by several problems that might cause errors in solving and the angles between the force and distance that results to some difficulties to several students.
+It is really useful to learn and master the concept of work such that it is applied in our everyday lives, with the aid of technology, several programs have the capacity to solve word problems related to work allowing students to improve their solving capability at the same time teaching techniques in analyzing and critical thinking.
+
+D.	Shunting Yard Algorithm
+Shunting yard algorithm is use for parsing mathematical expressions that are in a infix notation, it was developed by Edsger Dijkstra.
+
+The algorithm uses a stack and a queue data structure, the concept is that the operands are placed on the queue, else if an operator is detected, it will be pushed on the stack, with this algorithm convert the infix to postfix notation is possible  allowing the equation to be solved with the right precedence of operators. In the figure below it is shown how Shunting Yard algorithm process expressions from infix to postfix.
+
+Figure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The code implementation of the Shunting Yard algorithm in detail as shown below
+
+While there are tokens to be read:
+                 Read a token.
+                 If the token is a number, then add it to the output queue.
+                 If the token is a function token, then push it onto the stack.
+                 If the token is a function argument separator (e.g., a comma):
+
+ Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the   output queue. If no left parentheses are encountered, either the separator was misplaced or  parentheses were mismatched.
+                 If the token is an operator, o1, then:
+while there is an operator token, o2, at the top of the stack, and
+          either o1 is left-associative and its precedence is *less than or equal* to that of o2,
+          or o1 if right associative, and has precedence *less than* that of o2,
+                   then pop o2 off the stack, onto the output queue;
+                    push o1 onto the stack.
+                 If the token is a left parenthesis, then push it onto the stack.
+                 If the token is a right parenthesis:
+Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the output queue.
+Pop the left parenthesis from the stack, but not onto the output queue.
+If the token at the top of the stack is a function token, pop it onto the output queue.
+If the stack runs out without finding a left parenthesis, then there are mismatched parentheses.
+             When there are no more tokens to read:
+While there are still operator tokens in the stack:
+             If the operator token on the top of the stack is a parenthesis, then there are          mismatched parentheses.
+                                  Pop the operator onto the output queue.
+Exit
+
+
+E.	Fast Math: A Pattern Matching Abstraction of Mathematical Word Age Problems Using Knuth-Morris-Pratt Algorithm
+
+Fast Math is an undergraduate thesis by Altea Joshua Francis p et.al.in 2014 software application that is used to solve word age problems using Knuth-Morris-Pratt algorithm. The process of the Fast Math involves an input of a valid mathematical word age problem in a subject-predicate sentence format. After this step the use of Objective identification and Character recognition in extracting the sentence and POS tagging will occur to label what part of speech of each divided word. An equation Generation is used for making equations on each sentence. A Gaussian elimination is used to solve equations, the tokenizer has an algorithm where the names, numbers and punctuations are parsed in a string array then any words that are recognized by Knutt-Morris-Pratt Algorithm is the next one to be parsed, the figure below show the architecture of the Fast Math.
+
+Figure
+
+
+
+
+
+
+
+
+
+
+
+
+F.	Synthesis
+
+Related Literature/ Study	Relation to the study
+Natural Language Processing	Natural language processing will help the researchers on how the application will work. by knowing the its concepts, process and factors that will affect the performance of the program.
+Solving Mathematical Word problems	The researchers studied the concepts of word problems to gather techniques in formulating equations and making solutions to apply in the program and also to gather idea in the format of word problems for the input. 
+Concept of work	The researchers have studied basic concepts of work for the application of the program in order to come up with right solution and step-by-step process and to arrive with the correct answer.
+Shunting Yard Algorithm	Using the Shunting yard algorithm will allow evaluation of expressions if it is solved correctly base on the order of precedence.
+Fast Math: A Pattern Matching Abstraction of Mathematical Word Age Problems Using Knuth-Morris-Pratt Algorithm
+	Fast Math will serve as basis for the researchers to identify if the program produces the right output
+
